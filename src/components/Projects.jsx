@@ -41,21 +41,17 @@ const projectsData = [
   },
 ]
 
-// three copies so the list can loop
 const infiniteProjects = [...projectsData, ...projectsData, ...projectsData]
 
-// width of one full set of cards (distance from card 0 to the first card of set 2)
 const getSetWidth = (el) =>
   el.children[projectsData.length].offsetLeft - el.children[0].offsetLeft
 
-// distance from one card to the next (card width + gap)
 const getCardStep = (el) =>
   el.children[1].offsetLeft - el.children[0].offsetLeft
 
 const Projects = () => {
   const scrollRef = useRef(null)
 
-  // start in the middle set so you can scroll both directions
   useEffect(() => {
     const el = scrollRef.current
     if (el) el.scrollLeft = getSetWidth(el)
@@ -71,7 +67,6 @@ const Projects = () => {
 
     el.scrollTo({ left: targetScroll, behavior: 'smooth' })
 
-    // after the smooth scroll finishes, jump back into the middle set
     setTimeout(() => {
       const current = scrollRef.current
       if (!current) return
