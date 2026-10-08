@@ -27,7 +27,7 @@ const Contact = () => {
               <input 
               type="text"
               placeholder='Name'
-              className='w-full px-5 py-4 rounded-xl border
+              className='w-full px-5 py-4 rounded-xl border mb-5
               outline-hidden text-base transition-all
               dark:border-zinc-800 border-gray-200
                dark:bg-zinc-900/60 bg-white
@@ -38,7 +38,7 @@ const Contact = () => {
               <input 
               type="e-mail"
               placeholder='E-mail'
-              className='w-full px-5 py-4 rounded-xl border
+              className='w-full px-5 py-4 rounded-xl border mb-5
               outline-hidden text-base transition-all
               dark:border-zinc-800 border-gray-200
                dark:bg-zinc-900/60 bg-white
@@ -51,7 +51,7 @@ const Contact = () => {
               <textarea
               rows="5"
               placeholder='Massage'
-              className='w-full px-5 py-4 rounded-xl border
+              className='w-full px-5 py-4 rounded-xl border mb-5
               outline-hidden text-base transition-all
               dark:border-zinc-800 border-gray-200
                dark:bg-zinc-900/60 bg-white
@@ -63,7 +63,7 @@ const Contact = () => {
               
               <button
               type='submit'
-              className='inline-flex items-center
+              className='inline-flex items-center mb-5
               justify-center gap-2 px-8 py-4 rounded-xl
               text-white font-medium text-base
               bg-red-600 hover:bg-red-700

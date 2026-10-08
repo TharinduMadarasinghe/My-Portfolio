@@ -4,7 +4,7 @@ import { FaGithub, FaHeart, FaInstagram, FaLink, FaLinkedin } from 'react-icons/
 const Footer = () => {
         const currentYear = new Date().getFullYear();  return (
     <footer
-    className='border-t bg-linear-to-br from-red-400 to-white
+    className='border-t bg-linear-to-br from-red-400 to-white min-h-[200px]
     dark:bg-linear-to-br dark:from-red-950 dark:to-black py-6'>
       <div className='container mx-auto px-6 flex flex-col
       sm:flex-row justify-between items-center gap-4'>
@@ -35,8 +35,7 @@ const Footer = () => {
             </a>
         </div>
         <p className='text-xs flex items-center gap-1'>
-            {currentYear} Made With <FaHeart 
-            className='text-red-500'/> by <span
+            {currentYear} Made by <span
             className='font-semibold text-red-500'>
                 Tharindu
             </span>
